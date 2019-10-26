@@ -1,5 +1,5 @@
 gg.alert(os.date("    ⏰%A, %d %B %Y\000 %H:%M ⏰\n═══════════════════════════\n         ✌✌✌For Pung 0.15 ✌✌✌\n═══════════════════════════\n           ❤❤❤Spark VVIP ❤❤❤\n═══════════════════════════\n          "))
-gg.alert("✌If you face any issue just report me✌\nWhats new..  \n - less recoil lobby fixed.\n -Added Flash V2. \n \n>Now use Old GG for everything working. \n>Latest Gg still have wallhack and colour hack isue. \n>I will fix it as soon as possible via online. \n>Contact:- Whatsapp:8470981365  ")
+gg.alert("✌If you face any issue just report me✌\nWhats new..  \n - less recoil lobby fixed.\n -Added Flash V2. \n -Added yellow Sd 845 colour \n \n>Now use Old GG for everything working. \n>Latest Gg still have wallhack and colour hack isue. \n>I will fix it as soon as possible via online. \n>Contact:- Whatsapp:8470981365  ")
 function Main()
 PUBG = 1
   SN =gg.choice({
@@ -68,7 +68,7 @@ function a()
     "🐰Colour Red🐰",
     "🐰Colour Green🐰",
     "🐰Colour yellow🐰",
-    "🐰Colour yellow V2🐰",
+    "🐰Colour yellow Sd 845🐰",
     "👈Back"
   }, nil, "   🐰🐰🐰Spark VVIP🐰🐰🐰\n ✌✌✌For Pubg 0.15✌✌✌\n❤❤❤ Designed By Viper ❤❤❤")
     if WH == nil then
@@ -253,20 +253,15 @@ function ggg()
 end
 
 function hhh()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("1,080,033,292;8200;1,194,380,045;13;14::100",  gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0, -1)
-  gg.searchNumber("14", gg.TYPE_DWORD,false,gg.SIGN_EQUAL,0,-1)
-  gg.getResults(10)
-  gg.editAll("12",gg.TYPE_DWORD)
-  gg.toast("Yellow v2")
-  gg.clearResults()
-  gg.setRanges(131072)
-  gg.searchNumber("8,192D;256D;8200D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("7", gg.TYPE_DWORD)
-  gg.toast("Yellow v2")
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("8200;96", 4, false, 536870912, 0, -1)
+gg.refineNumber("8200", 4, false, 536870912, 0, -1)
+gg.refineAddress("090")
+gg.getResults(9999)
+gg.editAll("\"8199\"", 4)
+gg.clearResults()
+gg.toast("Yellow 845 activated")
 end
 
 function c()
@@ -822,6 +817,8 @@ XLNB1 = gg.multiChoice({
       '🐰Fɪx Nᴏ Dᴀᴍᴀɢᴇ Dᴘ-➁➇🐰',
       'Back'
     }, nil, '  🐰🐰🐰Spark VVIP🐰🐰🐰\n ✌✌✌For Pubg 0.15✌✌✌\n❤❤❤ Designed By Viper ❤❤❤')
+      if XLNB1 == nil then
+      else
       if XLNB1[1] == true then
         FS1()
       end
@@ -885,8 +882,8 @@ XLNB1 = gg.multiChoice({
       if XLNB1[21] == true then
         Main()
     end
+  end
  end
-  
   function FS1()
     gg.clearResults()
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -1578,8 +1575,19 @@ gg.searchNumber("-6.1526231e27", 16, false, 536870912, 0, -1)
 gg.getResults(1)
 gg.editAll("0", 16)
 gg.clearResults()
-gg.toast("LimonaHack")
+gg.toast("flash on v2")
 i()
+end
+
+function flashoff()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('-8.795458e22;-3.693674e20;1.2382424e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('1.2382424e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll('-1.2382424e28', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Flash off v2")
 end
 
 function Exit()
@@ -1600,4 +1608,5 @@ while true do
     Main()
   end
 end
+
 
