@@ -30,3 +30,4 @@ module.exports = {
     return new module.exports.Robot(adapterPath, adapterName, enableHttpd, botName, botAlias)
   }
 }
+nmvf
