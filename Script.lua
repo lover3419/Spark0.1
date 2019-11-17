@@ -68,7 +68,8 @@ function a()
     "🐰Colour Red🐰",
     "🐰Colour Green🐰",
     "🐰Colour yellow🐰",
-    "🐰Colour yellow Sd 845🐰",
+    "🐰New Sd 845 colour🐰",
+    "🐰fix blink Sd 845-855🐰",
     "👈Back"
   }, nil, "   🐰🐰🐰Spark VVIP🐰🐰🐰\n ✌✌✌For Pubg 0.15✌✌✌\n❤❤❤ Designed By Viper ❤❤❤")
     if WH == nil then
@@ -101,6 +102,9 @@ function a()
     hhh()
     end
     if WH[10] == true then
+    iii()
+    end
+    if WH[11] == true then
     Main()
     end
   end
@@ -168,20 +172,6 @@ function bbb()
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(10)
   gg.editAll("130", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("1,661,566,999;96;539,246,604;8200::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("7", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setVisible(false)
   gg.clearResults()
   gg.toast("Wallhack 845 ")
 end
@@ -259,15 +249,24 @@ function ggg()
 end
 
 function hhh()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1,661,566,999;96;539,246,604;8200::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.clearResults()
+end
+
+function iii()
 gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("8200;96", 4, false, 536870912, 0, -1)
-gg.refineNumber("8200", 4, false, 536870912, 0, -1)
-gg.refineAddress("090")
-gg.getResults(9999)
-gg.editAll("\"8199\"", 4)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(999)
+gg.editAll("9999", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("Yellow 845 activated")
+gg.toast("Wallhack Fix Blink 845-855")
 end
 
 function c()
