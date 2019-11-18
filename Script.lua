@@ -68,7 +68,7 @@ function a()
     "🐰Colour Red🐰",
     "🐰Colour Green🐰",
     "🐰Colour yellow🐰",
-    "🐰New Sd 845 colour🐰",
+    "🐰New Sd 845 green colour🐰",
     "🐰fix blink Sd 845-855🐰",
     "👈Back"
   }, nil, "   🐰🐰🐰Spark VVIP🐰🐰🐰\n ✌✌✌For Pubg 0.15✌✌✌\n❤❤❤ Designed By Viper ❤❤❤")
@@ -155,23 +155,16 @@ end
 
 function bbb()
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("218D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setRanges(gg.REGION_VIDEO)
+  gg.searchNumber("95D;2;9.2194229e-41::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.getResults(100)
+  gg.editAll("120", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("95D;2;9.2194229e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(15)
-  gg.editAll("130", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("206D;3.7615819e-37;2;-1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("130", gg.TYPE_FLOAT)
+  gg.getResults(100)
+  gg.editAll("120", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Wallhack 845 ")
 end
@@ -250,23 +243,24 @@ end
 
 function hhh()
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("1,661,566,999;96;539,246,604;8200::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setRanges(gg.REGION_VIDEO)
+  gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("0A0")
   gg.getResults(10)
-  gg.editAll("6", gg.TYPE_DWORD)
+  gg.editAll("8199", gg.TYPE_DWORD)
   gg.clearResults()
+  gg.toast("Green Color activated")
 end
 
 function iii()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(999)
-gg.editAll("9999", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("Wallhack Fix Blink 845-855")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO)
+  gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(999)
+  gg.editAll("9999", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Fix Blink 845-855")
 end
 
 function c()
