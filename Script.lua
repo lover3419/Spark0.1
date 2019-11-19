@@ -323,9 +323,9 @@ end
 function d()
   SS =gg.multiChoice({
     "🐰VIP SitScope Safe🐰",
-    "🐰SitScope On🐰",
-    "🐰SitScopeOff🐰",
-    "🐰Long hand forward🐰",
+    "🐰New SitScope On🐰",
+    "🐰New SitScopeOff🐰",
+    "🐰SitScope+Long hand🐰",
     "👈back",
    }, nil, "   🐰🐰🐰Spark VVIP🐰🐰🐰\n ✌✌✌For Pubg 0.15✌✌✌\n❤❤❤ Designed By Viper ❤❤❤")
     if SN == nil then
@@ -342,7 +342,7 @@ function d()
     if SS[4] == true then
      dd()
      end
-    if SS[4] == true then
+    if SS[5] == true then
      Main()
     end
   end
@@ -360,37 +360,35 @@ function aa()
 end
 
 function bb()
-  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("-0.67914116382599;-0.20633073151112;-0.68966287374496;9.49029350281;0.0064272880554199::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("9.49029350281", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(500)
-  gg.editAll("333.0517578125", gg.TYPE_FLOAT)
-  gg.toast("Sit Scope On")
   gg.clearResults()
+  gg.searchNumber("1,100,159,584", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("1,135,199,584", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Sit Scope On")
 end
 
 function cc()
-  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("-0.67914116382599;-0.20633073151112;-0.68966287374496;9.49029350281;0.0064272880554199::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("333.0517578125", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(500)
-  gg.editAll("9.49029350281", gg.TYPE_FLOAT)
-  gg.toast("Sit Scope Off")
   gg.clearResults()
+  gg.searchNumber("1,135,199,584", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("1,100,159,584", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Sit Scope Off")
 end
 
 function dd()
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("0.46691286564;23.5222568.22;0.000228405::9",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
-  gg.searchNumber("23.5222568.22;0.000228405",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
-  gg.getResults(21)
-  gg.editAll("150;500",gg.TYPE_FLOAT)
-  gg.editAll("68.2;225",gg.TYPE_FLOAT)
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("-5.73423916e27F;-1,283,514,890,394,129,918;-1,287,156,464,314,480,127;-1,283,514,886,099,101,181;-1,283,514,890,393,220,606;-1,324,311,049,571,137,023;-1,246,359,368,843,191,779:257",gg.TYPE_QWORD,false,gg.SIGN_EQUAL,0,-1)
+  gg.refineNumber("-5.73423916e27",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
+  gg.getResultsCount()
+  gg.getResults(6281913639784)
+  gg.editAll("-5.73425156e27",gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("☬ Long Hand Foward ☬")
+  gg.toast(" Sɪᴛ Sᴄᴏᴘᴇ + Lᴏɴɢ Hᴀɴᴅ ")
 end
 
 function e()
