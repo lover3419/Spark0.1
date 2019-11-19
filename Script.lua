@@ -322,7 +322,7 @@ end
 
 function d()
   SS =gg.multiChoice({
-    "🐰VIP SitScope Safe🐰",
+    "🐰Sit Scope(menu)🐰",
     "🐰New SitScope On🐰",
     "🐰New SitScopeOff🐰",
     "🐰SitScope+Long hand🐰",
@@ -350,14 +350,160 @@ function d()
 end
 
 function aa()
+MN16 = gg.multiChoice({
+
+"🔥Sit Scope ON [Land]",
+"🔥Sit Scope OFF [Land]",
+"🔥Sit High Scope [Land]",
+"🔥Stand Scope ON [Land]",
+"🔥Stand Scope OFF [Land]",
+"🔥Prone Scope [Land]",
+"🔥Prone High Scope [Land]",
+"🔥Stand Front Scope [Land]",
+"🔥Sit Down Scope ON [Land]",
+"🔥Sit Down Scope OFF [Land]",
+
+"⏪ Back",
+
+	  }, nil, "💢 Scope/High View Menu 💢")
+  if MN16 == nil then
+  else
+  if MN16[1] == true then SIS() end
+  if MN16[2] == true then SISOFF() end
+  if MN16[3] == true then SISHIGH() end
+  if MN16[4] == true then STND() end
+  if MN16[5] == true then STNDOFF() end
+  if MN16[6] == true then PRNS() end
+  if MN16[7] == true then PRNSHIGH() end
+  if MN16[8] == true then LHD() end
+  if MN16[9] == true then SISD() end
+  if MN16[10] == true then SISDOFF() end
+  if MN16[11] == true then d() end
+  end
+  TLC_DEC_FULL = -1
+end
+
+
+function PRNSHIGH()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("13.27516937256;0;-1220804608D;-0.33301302791::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(21)
+gg.editAll("-375", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("13.27516937256;-375;-1220804608D;-0.33301302791::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1220804608", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1220804608", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-1220804608", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(21)
+gg.editAll("-1026424832", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Prone High Scope activated!")
+end
+
+function SISHIGH()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("-0.90990304947;0.4148209691;18.38787841797;0.53869867325::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("18.38787841797;0.53869867325::5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(24)
+gg.editAll("346;105", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Sit High Scope activated!")
+end
+
+function SISDOFF()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1 152 319 488D;1 036 831 949D;1 148 846 080D;1 118 830 592D;500F;1 112 014 848D::25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("60", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Sit Down Scope deactivated!")
+end
+
+function SISD()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1 152 319 488D;1 036 831 949D;1 148 846 080D;1 118 830 592D;60F;1 112 014 848D::25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("60", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("500", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Sit Down Scope activated!")
+end
+
+function SISOFF()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
+gg.searchNumber("1,135,199,584", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("1,100,159,584", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Sit Scope deactivated!")
+end
+
+function STNDOFF()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber('-9.5367432e-7;-0.10621572286;-0.3004361093;0.46691286564;23.5222568512::17', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('-205;-105', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(21)
+    gg.editAll('-9.5367432e-7;23.5222568512', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast('Stand Scope deactivated!')
+end
+
+function PRNS()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.39119869471;18.38614463806;0.53446578979;-3.42663908005;0.69551950693::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("18.38614463806;0.53446578979;", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultCount()
+gg.getResults(6)
+gg.editAll("200", gg.TYPE_FLOAT)
+gg.toast("Prone Scope activated!")
+end
+
+function LHD()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.46691286564;23.5222568512;0.000228405::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("23.5222568512;0.000228405", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(21)
+gg.editAll("150;500", gg.TYPE_FLOAT)
+gg.editAll("67.5;225", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Stand Front Scope activated!")
+end
+
+function STND()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
-  gg.toast("VIP Sit scope activated")
+  gg.searchNumber("-9.5367432e-7;-0.10621572286;-0.3004361093;0.46691286564;23.5222568512::17", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-9.5367432e-7;23.5222568512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(21)
+  gg.editAll("-205;-105", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Stand Scope activated!")
 end
+
+
+function SIS()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
+gg.searchNumber("1,100,159,584", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("1,135,199,584", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("Sit Scope activated!")
+end
+
 
 function bb()
   gg.setRanges(gg.REGION_ANONYMOUS)
