@@ -11,8 +11,8 @@ PUBG = 1
   "🐵MicroSpeed (game)🐵",
   "🐶Flash On🐶",
   "🐶Flash Off🐶",
-  "🐰Flash V2 On🐰",
-  "🐰Flash V2 Off🐰",
+  "🐰Flash V2 On new safe🐰",
+  "🐰Flash V2 Off new safe🐰",
   "🦁Flash Weapons Damage fix(menu)🦁",
   "👈Exit👉"
  }, nil, "   🐰🐰🐰Spark VVIP🐰🐰🐰\n ✌✌✌For Pubg 0.15✌✌✌\n❤❤❤ Designed By Viper ❤❤❤")
@@ -265,7 +265,7 @@ end
 
 function c()
   NR =gg.multiChoice({
-    "🐰Less Recoil(lobby)🐰",
+    "🐰Less Recoil(lobby) safe 100%🐰",
     "🐰No Recoil (game)🐰",
     "👈Back"
    }, nil, "   🐰🐰🐰Spark VVIP🐰🐰🐰\n ✌✌✌For Pubg 0.15✌✌✌\n❤❤❤ Designed By Viper ❤❤❤")
@@ -285,20 +285,31 @@ function c()
 end
 
 function nra()
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1D;0.05000000075F;0.10000000149F;0.55000001192F;9.5F;15.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast("➖Less Recoil Lobby Activated ")
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_DATA)
+    gg.searchNumber("-2.786982e28;-3.7444097e28;-1.1368837e-13::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("-3.7444097e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(1)
+    gg.editAll("0", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_DATA)
+    gg.searchNumber("-2.8111605e28;-3.7444097e28;-1.1144502e28;128.0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(1)
+    gg.editAll("0", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_DATA)
+    gg.searchNumber("-6.1549454e27;1.8638966e-20;-1.1144502e28;0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(1)
+    gg.editAll("0", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_DATA)
+    gg.searchNumber("-1.2382424e28;-1.4239333e28;-1.1144502e28;-1.8331474e27;-7.1608877e24::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(2)
+    gg.editAll("90", gg.TYPE_FLOAT)
+    gg.toast("No Recoil 100% activated!")
 end
 
 function nrb()
@@ -565,7 +576,7 @@ end
 function gmha()
    GMHS =gg.multiChoice({
      "🐰Autohead stable🐰",
-     "🐰Auto head 99%🐰",
+     "🐰Ultinate Autohead🐰",
      "🐰Aimbot 100m🐰",
      "👈back",
     }, nil, "   🐰🐰🐰Spark VVIP🐰🐰🐰\n ✌✌✌For Pubg 0.15✌✌✌\n❤❤❤ Designed By Viper ❤❤❤")
@@ -600,24 +611,14 @@ end
 
 function gmhsb()
   gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-460", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-560", gg.TYPE_FLOAT)
-  gg.clearResults()
+  gg.toast("Spark VVIP")
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("250", gg.TYPE_FLOAT)
+  gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("1800", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Auto Headshot 99% Activated ")
+  gg.toast("Ultimate HeadShot activated")
 end
 
 function gmhsc()
@@ -1565,31 +1566,26 @@ function egd()
 end
 
 function flashon()
-gg.clearResults()
-gg.setRanges(8)
-gg.searchNumber("-8.795458e22;-3.693674e20;-1.2382424e28", 16, false, 536870912, 0, -1)
-gg.searchNumber("-1.2382424e28", 16, false, 536870912, 0, -1)
-gg.getResults(1)
-gg.editAll("1.2382424e28", 16)
-gg.clearResults()
-gg.searchNumber("-6.1526231e27;-1.0070975e28::", 16, false, 536870912, 0, -1)
-gg.searchNumber("-6.1526231e27", 16, false, 536870912, 0, -1)
-gg.getResults(1)
-gg.editAll("0", 16)
-gg.clearResults()
-gg.toast("flash on v2")
-i()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_DATA)
+    gg.searchNumber("-8.795458e22;-3.693674e20;-1.2382424e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("-1.2382424e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(1)
+    gg.editAll("1.2382424e28", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("flash on v2")
+    i()
 end
 
 function flashoff()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber('-8.795458e22;-3.693674e20;1.2382424e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('1.2382424e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(1)
-gg.editAll('-1.2382424e28', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("Flash off v2")
+    gg.clearResults()
+    gg.setRanges(gg.REGION_C_DATA)
+    gg.searchNumber("-8.795458e22;-3.693674e20;1.2382424e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber("1.2382424e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.getResults(1)
+    gg.editAll("-1.2382424e28", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("Flash off v2")
 end
 
 function Exit()
