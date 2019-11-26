@@ -60,8 +60,8 @@ end
 
 function a()
   WH =gg.multiChoice({
-    "🐰Universal Wallhack🐰",
-    "🐰Sd 820 Wallhack🐰",
+    "🐰SD 855 Wall+yellow🐰",
+    "🐰Sd 820 Wallhack+green🐰",
     "🐰SD 845 Wallhack🐰",
     "🐰SD 626 Wallhack🐰",
     "🐰SD 636 Wallhack🐰",
@@ -112,28 +112,24 @@ function a()
 end
 
 function aaab()
-gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  if gg.getResultCount() == 0 then
-    gg.toast("Universal wh activating")
-  else
-    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(30)
-    gg.editAll("120", gg.TYPE_FLOAT)
-    gg.toast("50%")
-  end
+  gg.searchNumber("95D;2;9.2194229e-41::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.toast("Wallhack 855 activated")
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  if gg.getResultCount() == 0 then
-    gg.toast("75%")
-  else
-    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(30)
-    gg.editAll("120", gg.TYPE_FLOAT)
-    gg.toast("Universal Wallhack activated")
-  end
+  gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("298", -1, gg.TYPE_DWORD, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.editAll("6", gg.TYPE_DWORD)
+  gg.toast("COLOR 855 YELLOW activated")
 end
 
 function aaa()
@@ -167,6 +163,14 @@ function bbb()
   gg.editAll("120", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Wallhack 845 ")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_VIDEO)
+  gg.searchNumber("8201", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineAddress("0A0")
+  gg.getResults(10)
+  gg.editAll("8199", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Green Color activated")
 end
 
 function ccc()
